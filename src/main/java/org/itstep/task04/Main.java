@@ -25,19 +25,19 @@ package org.itstep.task04;
 public class Main {
     public static void main(String[] args) {
         // FIXME: Раскомментируйте код
-//        Employee[] employees = {
-//                new EmployeeAndTugrik("Иванов", PaymentTypes.RATE, 3000, true),
-//                new EmployeeAndTugrik("Сидоров", PaymentTypes.HOURLY, 800, true),
-//                new EmployeeAndTugrik("Петров", PaymentTypes.JOB_PRICE, 5500)
-//        };
-//        ((EmployeeAndTugrik)(employees[employees.length/2])).setTugrikExchange(8);
-//        System.out.println("  ФИО    |  Налог, % | Сумма (грн) | К оплате (грн)\n" +
-//                "---------|-----------|-------------|---------------");
-//        double sum = 0;
-//        for (Employee employee : employees) {
-//            System.out.println(employee);
-//            sum += employee.getPayment();
-//        }
-//        System.out.println(" Итого   |           |             | " + sum);
+        Employee[] employees = {
+                new EmployeeAndTugrik("Иванов", PaymentTypes.RATE, 3000, true),
+                new EmployeeAndTugrik("Сидоров", PaymentTypes.HOURLY, 800, true),
+                new EmployeeAndTugrik("Петров", PaymentTypes.JOB_PRICE, 5500)
+        };
+        ((EmployeeAndTugrik)(employees[employees.length/2])).setTugrikExchange(8);
+        System.out.println("  ФИО    |  Налог, % | Сумма (грн) | К оплате (грн)\n" +
+                "---------|-----------|-------------|---------------");
+        double sum = 0;
+        for (Employee employee : employees) {
+            System.out.println(employee);
+            sum += employee.getPayment();
+        }
+        System.out.println(" Итого   |           |             | " + sum);
     }
 }
